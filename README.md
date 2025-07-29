@@ -1,4 +1,4 @@
-# Titanic Survival Prediction 🚢
+# Titanic Survival Prediction
 
 A data science project to analyze the factors that influenced survival on the Titanic and build a machine learning model to predict passenger survival.
 
@@ -27,16 +27,16 @@ The objective of this project is to perform a complete data science workflow to 
 
 ### **Workflow**
 The project follows a structured data science workflow:
-1.  **🔍 Exploratory Data Analysis:** Inspected the data for shape, types, null values, and statistical summaries. Found significant missing data in `Age` and `Cabin`.
-2.  **📈 Visual Analysis:** Used `seaborn` and `matplotlib` to visualize relationships. Key discoveries include the strong correlation between `Sex`/`Pclass` and `Survived`.
-3.  **🛠️ Data Cleaning & Feature Engineering:**
+1.  **Exploratory Data Analysis:** Inspected the data for shape, types, null values, and statistical summaries. Found significant missing data in `Age` and `Cabin`.
+2.  **Visual Analysis:** Used `seaborn` and `matplotlib` to visualize relationships. Key discoveries include the strong correlation between `Sex`/`Pclass` and `Survived`.
+3.  **Data Cleaning & Feature Engineering:**
     - Handled missing values by imputing `Age` with the median and `Embarked` with the mode. Dropped the `Cabin` column.
     - Engineered new features like `FamilySize` and `IsAlone` to capture more information.
     - Encoded categorical variables (`Sex`, `Embarked`) into a numerical format using mapping and one-hot encoding.
-4.  **🤖 Model Building & Evaluation:**
+4.  **Model Building & Evaluation:**
     - Trained three different models: Logistic Regression, Random Forest, and XGBoost.
     - Evaluated models using Accuracy, Precision, Recall, F1-Score, and AUC.
-5.  **📊 Model Comparison:** Compared the performance of all models to select the best one for this task.
+5.  **Model Comparison:** Compared the performance of all models to select the best one for this task.
 
 ---
 
@@ -52,9 +52,9 @@ The models were evaluated on the test set. XGBoost emerged as the top-performing
 
 | Model               | Accuracy | F1-Score | AUC-ROC |
 |---------------------|----------|----------|---------|
-| Logistic Regression | 0.8101   | 0.7536   | 0.7966  |
-| Random Forest       | 0.8212   | 0.7656   | 0.8063  |
-| **XGBoost**         | **0.8268**   | **0.7761**   | **0.8128**  |
+| Logistic Regression | 0.7989   | 0.7273   | 0.7796  |
+| Random Forest       | **0.8212**   | **0.7576**   | **0.8032**  |
+| **XGBoost**         | 0.8045   | 0.7328   | 0.7842  |
 
 
 ---
@@ -66,7 +66,7 @@ The models were evaluated on the test set. XGBoost emerged as the top-performing
 - **Matplotlib & Seaborn:** For data visualization.
 - **Scikit-learn:** For data preprocessing and classical machine learning models.
 - **XGBoost:** For the high-performance gradient boosting model.
-- **Jupyter Notebook:** As the main environment for analysis.
+- **Google Colab:** As the main environment for analysis.
 
 ---
 
@@ -74,7 +74,7 @@ The models were evaluated on the test set. XGBoost emerged as the top-performing
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/Samarth-3910/Predict-Survival-on-the-Titanic
-    cd titanic-survival-prediction
+    cd Predict-Survival-on-the-Titanic
     ```
 2.  **Create and activate a virtual environment:**
     ```bash
@@ -87,5 +87,5 @@ The models were evaluated on the test set. XGBoost emerged as the top-performing
     ```
 4.  **Run the Jupyter Notebook:**
     ```bash
-    jupyter notebook notebooks/titanic_analysis.ipynb
+    jupyter notebook notebooks/predict_survival_on_the_titanic.ipynb
     ```
