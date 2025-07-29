@@ -73,7 +73,7 @@ The models were evaluated on the test set. XGBoost emerged as the top-performing
 ### **How to Run This Project**
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/titanic-survival-prediction.git
+    git clone https://github.com/Samarth-3910/Predict-Survival-on-the-Titanic
     cd titanic-survival-prediction
     ```
 2.  **Create and activate a virtual environment:**
