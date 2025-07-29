@@ -48,7 +48,7 @@ The project follows a structured data science workflow:
 ---
 
 ### **Model Performance**
-The models were evaluated on the test set. XGBoost emerged as the top-performing model.
+The models were evaluated on the test set. Random Forest emerged as the top-performing model.
 
 | Model               | Accuracy | F1-Score | AUC-ROC |
 |---------------------|----------|----------|---------|
@@ -81,11 +81,7 @@ The models were evaluated on the test set. XGBoost emerged as the top-performing
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
-3.  **Install the required dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **Run the Jupyter Notebook:**
+3.  **Run the Jupyter Notebook:**
     ```bash
     jupyter notebook notebooks/predict_survival_on_the_titanic.ipynb
     ```
